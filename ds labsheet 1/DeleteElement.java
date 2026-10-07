@@ -28,7 +28,8 @@ public class DeleteElement {
 
     public static int deleteByPosition(int[] arr, int size, int pos) { 
 
-        if (pos < 0 || pos >= size) return size; 
+        if (pos < 0 || pos >= size) 
+            return size; 
 
         for (int i = pos; i < size - 1; i++) { 
 
@@ -58,7 +59,8 @@ public class DeleteElement {
 
         } 
 
-        if (pos == -1) return size; 
+        if (pos == -1) 
+            return size; 
 
         return deleteByPosition(arr, size, pos); 
 
